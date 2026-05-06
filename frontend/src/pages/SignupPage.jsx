@@ -27,6 +27,7 @@ export default function SignupPage() {
       setEmailStatus(res.data.exists ? 'taken' : 'available')
     } catch {
       setEmailStatus(null)
+      setError('이메일 확인 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.')
     }
   }
 
