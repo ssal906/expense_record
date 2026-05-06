@@ -1,0 +1,24 @@
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-list-empty {
+  text-align: center;
+  padding: 56px 20px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  color: var(--text-secondary);
+}
+
+.product-list-empty p {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.empty-hint {
+  font-size: 13px !important;
+  color: #94a3b8 !important;
+}

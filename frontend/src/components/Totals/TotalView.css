@@ -1,0 +1,97 @@
+.totals-view {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.totals-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.totals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.total-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 160px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  transition: background 0.2s;
+}
+
+.total-row.selected {
+  background: var(--primary-light);
+}
+
+.total-month {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.total-bar-wrap {
+  height: 8px;
+  background: #f1f5f9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.total-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), #818cf8);
+  border-radius: 4px;
+  min-width: 4px;
+  transition: width 0.5s ease;
+}
+
+.total-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.total-amount {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.diff {
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.diff.more {
+  color: var(--danger);
+}
+
+.diff.less {
+  color: var(--success);
+}
+
+.diff.neutral {
+  color: var(--text-secondary);
+}
+
+.totals-empty {
+  text-align: center;
+  padding: 56px 20px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  color: var(--text-secondary);
+  font-size: 15px;
+}

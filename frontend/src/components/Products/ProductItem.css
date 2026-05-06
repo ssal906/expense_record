@@ -1,0 +1,99 @@
+.product-item {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s;
+}
+
+.product-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.product-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-name {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.product-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.nec-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.product-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.product-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-edit {
+  padding: 5px 12px;
+  background: white;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-edit:hover {
+  background: var(--primary-light);
+}
+
+.btn-delete {
+  padding: 5px 12px;
+  background: white;
+  color: var(--danger);
+  border: 1.5px solid var(--danger);
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-delete:hover {
+  background: #fef2f2;
+}

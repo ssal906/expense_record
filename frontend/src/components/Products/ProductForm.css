@@ -1,0 +1,139 @@
+.product-form-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  border: 1.5px solid #c7d2fe;
+}
+
+.product-form-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--text);
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.form-group input:focus {
+  border-color: var(--primary);
+}
+
+/* Necessity buttons */
+.necessity-group {
+  display: flex;
+  gap: 8px;
+}
+
+.necessity-btn {
+  flex: 1;
+  padding: 9px 4px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  background: white;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+}
+
+.necessity-btn.active.nec-상 {
+  background: #fee2e2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+.necessity-btn.active.nec-중 {
+  background: #fef3c7;
+  color: #d97706;
+  border-color: #fcd34d;
+}
+.necessity-btn.active.nec-하 {
+  background: #dcfce7;
+  color: #16a34a;
+  border-color: #86efac;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  padding: 9px 20px;
+  background: white;
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-submit {
+  padding: 9px 24px;
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-error {
+  font-size: 13px;
+  color: var(--danger);
+  background: #fef2f2;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid #fecaca;
+  margin-top: 4px;
+}
